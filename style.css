@@ -1,6 +1,92 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
-
+/**
+ * General style.
+ */
 * {
-    font-family: 'Noto Sans JP', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
+html {
+    font-size: 62.5%;
+}
+
+body {
+    width: 100%;
+    display: flex;
+}
+
+header {
+    text-align: center;
+    background-color: palevioletred;
+}
+
+main a {
+    flex-direction: row;
+   justify-content: space-between;
+    margin: 3rem;
+    padding: 2rem;
+}
+
+nav i {
+    font-size: 11.5rem;
+    color: deepskyblue;
+    text-decoration-line: none;
+}
+
+nav i:hover {
+    color: purple;
+}
+
+aside {
+    margin-top: 3rem;
+    padding: 2rem;
+    text-align: center;
+    font-size: 10px;
+}
+
+aside li {
+    list-style-type: none;
+}
+
+#titleTable {
+    margin-top: 2rem;
+}
+
+/* Design table */
+table {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+table th {
+    border: 3px solid crimson;
+}
+
+table img {
+    width: 25%;
+    height: 6vw;
+}
+
+#experience {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+fieldset {
+    background-color: deepskyblue;
+    width: 100%;
+    text-align: center;
+}
+
+form textarea, form input {
+    margin: 1rem;
+}
+
+footer {
+    background-color: palevioletred;
+    font-size: 20px;
+}
+
+/* todo responsive mode */
