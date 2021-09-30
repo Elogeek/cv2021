@@ -1,20 +1,24 @@
-// Dancing letters animation label
+/*
+ Dancing letters animation label
+ */
 
-// chaques lettres colorées
+/*
+    color each letter a different color
+ */
 function randomColorLettersSpan(){
 
 }
 
 
-// Récupération li.json TODO
+// Recovery the file li.json TODO
 //const  xhr = new XMLHttpRequest();
 
 
 
 
-// Récupération dd.json
+// Recovery the file dd.json
 
-/* Footer
+/*  Design footer
 let footer = document.querySelector('footer');
 footer.style.display = 'none';
  */

@@ -8,6 +8,9 @@ tableTitle.addEventListener('dblclick',partyBckgColor);
 titleh3.addEventListener('dblclick', partyBckgColor);
 
 
+/*
+    Change background-color the titles <h3>
+ */
 function partyBckgColor() {
     this.style.backgroundColor = 'orange';
     this.style.fontSize = "3rem";

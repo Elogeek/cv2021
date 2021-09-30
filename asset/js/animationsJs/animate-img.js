@@ -1,7 +1,10 @@
-// Animation img
+// Image animation
 let myImg = document.querySelector('figure');
 myImg.addEventListener('mouseenter', moveImg);
 
+/*
+Move the image
+ */
 function moveImg(){
     myImg.style.cssText = `
      transform-origin : center center;
@@ -9,7 +12,9 @@ function moveImg(){
     `;
 }
 
-// Refresh img
+/*
+ Refresh the img
+ */
 myImg.addEventListener('click', refreshImg);
 
 function refreshImg() {
