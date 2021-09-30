@@ -65,7 +65,20 @@ function reset() {
     form.style.display = 'none';
 }
 
-// Animation label(search value label + entourer span chaque lettre pour couleur + tableau position lettre)
+// Animation label
+let label = document.querySelector("#label");
+console.log(label.value); //récupération des lettres
+
+//entourer chaque lettre d'un span pour mettre une couleur différente par lettre
+let span = document.createElement('span');
+span.id = "result";
+label.append(span);
+
+let wordFin = [];
+wordFin = [label.value()];
+
+// rechercher la position de la lettre via le tableau
+
 
 // Animation img
 let myImg = document.querySelector('figure');
@@ -87,9 +100,17 @@ function refreshImg() {
     `;
 }
 
-// Footer
+// Récupération li.json
+const  xhr = new XMLHttpRequest();
+xhr.open();
+
+
+
+// Récupération dd.json
+/* Footer
 let footer = document.querySelector('footer');
 footer.style.display = 'none';
+ */
 
 
 
