@@ -1,6 +1,6 @@
 /**
- * General style.
- */
+* General style.
+*/
 * {
     box-sizing: border-box;
     margin: 0;
@@ -16,31 +16,46 @@ body {
     display: flex;
 }
 
+/* Design header */
 header {
     text-align: center;
-    background-color: palevioletred;
+    background-color: crimson;
+    height: 15vh;
 }
 
-main a {
+header h1, header h2 {
+    padding: 2rem;
+    color: white;
+}
+
+h3 {
+    color: crimson;
+    margin: 1rem;
+    font-weight: bold;
+}
+
+/* Design menu */
+.menu {
+    display: flex;
     flex-direction: row;
    justify-content: space-between;
-    margin: 3rem;
+    margin: 2rem;
     padding: 2rem;
 }
 
 nav i {
-    font-size: 11.5rem;
-    color: deepskyblue;
+    font-size: 5rem;
+    color: crimson;
     text-decoration-line: none;
+    margin-left: 1rem;
 }
 
-nav i:hover {
-    color: purple;
+nav a {
+    text-decoration-line: none;
+    color: crimson;
 }
 
 aside {
-    margin-top: 3rem;
-    padding: 2rem;
     text-align: center;
     font-size: 10px;
 }
@@ -58,15 +73,38 @@ table {
     margin-top: 2rem;
     display: flex;
     justify-content: center;
+    border-collapse: collapse;
 }
 
 table th {
     border: 3px solid crimson;
+    padding: 1rem;
 }
 
-table img {
-    width: 25%;
-    height: 6vw;
+figure {
+    border: thin #c0c0c0 solid;
+    display: flex;
+    flex-flow: column;
+    padding: 5px;
+    max-width: 220px;
+    margin: auto;
+}
+
+img {
+    max-width: 220px;
+    max-height: 150px;
+}
+
+figcaption {
+    background-color: #222;
+    color: #fff;
+    font: italic smaller sans-serif;
+    padding: 3px;
+    text-align: center;
+}
+
+form {
+    display: none;
 }
 
 #experience {
@@ -74,20 +112,28 @@ table img {
     margin-top: 3rem;
 }
 
+/* Design arrow contact */
+.contact div {
+    color: crimson;
+    font-size: 3rem;
+    letter-spacing: .2rem;
+    padding: 1.5rem;
+}
+
 fieldset {
-    background-color: deepskyblue;
+    background-color: #cf0a1d;
     width: 100%;
     text-align: center;
 }
 
 form textarea, form input {
-    margin: 1rem;
+    margin: 0.5rem;
 }
-
+/*
 footer {
-    background-color: palevioletred;
+    background-color: crimson;
     font-size: 20px;
-}
+} */
 
 /* todo responsive mode */
 @media screen and (max-width: 0px) {

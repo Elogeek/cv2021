@@ -13,29 +13,33 @@
         <h1>Elodie Christin</h1>
         <h2>Elogeek</h2>
     </header>
-
     <!-- Menu here-->
     <nav>
         <main>
+            <div class="menu">
 
-            <!-- Home page-->
-            <a href="index.html"><i class="fas fa-home"></i></a>
+                <!-- Home page-->
+                <a href="index.html">Accueil<i class="fas fa-home"></i></a>
 
-            <!-- Graduation page-->
+                <!-- Graduation page-->
 
-            <a href="#education"><i class="fas fa-graduation-cap"></i></a>
+                <a href="#education">Education<i class="fas fa-graduation-cap"></i></a>
 
-            <!-- Hobbies page-->
+                <!-- Hobbies page-->
 
-            <a href="#hobbies"><i class="fas fa-thumbs-up"></i></a>
+                <a href="#hobbies">Hobbies<i class="fas fa-thumbs-up"></i></a>
 
-            <!-- Experience page-->
+                <!-- Experience page-->
 
-            <a href="#experience"><i class="fas fa-spinner"></i></a>
+                <a href="#experience">Expérience<i class="fas fa-spinner"></i></a>
+            </div>
         </main>
+
         <aside>
 
-            <ul><h3 id="education">Diplômes</h3>
+            <h3 id="education">Diplômes</h3>
+
+            <ul>
                 <li>
                     <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos maxime rem suscipit
                         veniam veritatis? Eius inventore labore molestiae quasi sint temporibus unde veritatis. Aut,
@@ -57,43 +61,25 @@
                 </li>
             </ul>
 
+            <h3 id="titleTable">Hobbies</h3>
+
             <table id="hobbies">
-                <h3 id="titleTable">Hobbies</h3>
                 <tbody>
-                <tr>
-                    <th>le Japon</th>
-                    <th>
-                        <img src="img/japan.webp" alt="amazing Japan">
-                        <img src="img/sakura.webp" alt="wonderful sakura">
-                    </th>
-                </tr>
-                <tr>
-                    <th>le dév :)</th>
-                    <th>
-                        <img src="img/dev.webp" alt="dev">
-                    </th>
-                </tr>
-                <tr>
-                    <th>la musique</th>
-                    <th>
-                        <img src="img/music.jpg" alt="super music">
-                    </th>
-                </tr>
-                <tr>
-                    <th>la nature</th>
-                    <th>
-                        <figure>
-                            <img src="img/mountain.jpg" alt="moutain">
-                            <img src="img/amazingMoutain.webp" alt="trop beau">
-                            <figcaption>Super paysage!</figcaption>
-                        </figure>
-                    </th>
-                </tr>
+                    <tr>
+                        <th>la nature</th>
+                        <th>
+                            <figure>
+                                <img src="img/amazingMoutain.webp" alt="trop beau">
+                                <figcaption>Super paysage!</figcaption>
+                            </figure>
+                        </th>
+                    </tr>
 
                 </tbody>
             </table>
 
-            <div id="experience"><h3>Expérience</h3>
+            <div id="experience">
+                <h3 id="titleExp">Expérience</h3>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid cumque deserunt exercitationem
                     facilis id omnis quibusdam
@@ -107,24 +93,28 @@
         </aside>
     </nav>
 
-    <div class="contact">
+    <section>
+        <div class="contact">
+            <div id="arrowDetail"><i class="fas fa-arrow-circle-right">Contact</i></div>
+            <form method="post" action="">
+                <fieldset>
+                    <label for="email">
+                        <input type="email" placeholder="email">
+                    </label>
+                    <label for="email"></label>
+                    <textarea name="email" id="email" cols="20" rows="5" placeholder="Votre message!"></textarea>
 
-        <form method="post" action="">
-            <fieldset>
-                <label for="email">
-                    <input type="email" placeholder="email">
-                </label>
-                <label for="email">rtrtrtrt</label>
-                <textarea name="email" id="email" cols="20" rows="5" placeholder="Votre message!"></textarea>
+                    <button type="submit" value="envoyer">envoyer</button>
+                </fieldset>
+            </form>
+        </div>
+    </section>
 
-                <button type="submit" value="envoyer">envoyer</button>
-            </fieldset>
-        </form>
-    </div>
-    <footer>
+  <!--  <footer>
         <span>Make by Elogeek</span>
         <span>@Copyright reproduction interdite</span>
-    </footer>
+    </footer> -->
 </div>
+<script src="asset/js/app.js"></script>
 </body>
 </html>
