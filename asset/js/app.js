@@ -55,7 +55,7 @@ let arrow = document.getElementById('arrowDetail');
 let form = document.querySelector('form');
 
 arrow.addEventListener('click', displayForm);
-arrow.addEventListener('mouseout', reset);
+arrow.addEventListener('dblclick', reset);
 
 function displayForm() {
     form.style.display = 'flex';
@@ -65,7 +65,7 @@ function reset() {
     form.style.display = 'none';
 }
 
-// Animation label?
+// Animation label(search value label + entourer span chaque lettre pour couleur + tableau position lettre)
 
 // Animation img
 let myImg = document.querySelector('figure');
