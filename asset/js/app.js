@@ -21,6 +21,11 @@ let span = document.createElement('span');
 span.innerHTML = rainbowColor();
 document.body.append(span);
 
+// Create a span
+span.id = 'resultDancingColor';
+span.prepend(label);
+
+
 
 
 
