@@ -2,14 +2,14 @@
 let title = document.querySelector('h1');
 
 title.addEventListener('click',changeColor);
-title.addEventListener('mouseout', refresh);
+title.addEventListener('mouseout', refreshTitle);
 
 function changeColor() {
     title.style.color = 'black';
     title.style.fontSize = '4rem';
 }
 
-function refresh() {
+function refreshTitle() {
     title.style.color = 'white';
     title.style.fontSize = '';
 }
@@ -55,17 +55,17 @@ let arrow = document.getElementById('arrowDetail');
 let form = document.querySelector('form');
 
 arrow.addEventListener('click', displayForm);
-arrow.addEventListener('dblclick', reset);
+arrow.addEventListener('dblclick', resetForm);
 
 function displayForm() {
     form.style.display = 'flex';
 }
 
-function reset() {
+function resetForm() {
     form.style.display = 'none';
 }
 
-// Animation label
+// Animation label TODO
 let label = document.querySelector("#label");
 console.log(label.value); //récupération des lettres
 
@@ -100,13 +100,14 @@ function refreshImg() {
     `;
 }
 
-// Récupération li.json
+// Récupération li.json TODO
 const  xhr = new XMLHttpRequest();
 xhr.open();
 
 
 
 // Récupération dd.json
+
 /* Footer
 let footer = document.querySelector('footer');
 footer.style.display = 'none';
