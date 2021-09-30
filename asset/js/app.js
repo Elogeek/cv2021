@@ -1,10 +1,14 @@
-// Animation label TODO
+// Dancing letters animation label
 
+// chaques lettres colorées
+function randomColorLettersSpan(){
+
+}
 
 
 // Récupération li.json TODO
 //const  xhr = new XMLHttpRequest();
-//xhr.open();
+
 
 
 
