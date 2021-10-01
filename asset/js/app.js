@@ -2,7 +2,7 @@
  Dancing letters animation label
 */
 let label = document.querySelectorAll('label');
-let myForm = document.querySelector('form');
+let myForm = document.querySelector('fieldset');
 
 /*
 Generate a random colors
@@ -25,13 +25,15 @@ document.body.append(span);
 span.id = 'resultDancingColor';
 myForm.appendChild(span);
 
-
-
-
-
 // Recovery the file li.json TODO
-//const  xhr = new XMLHttpRequest();
 
+//const xhr = new XMLHttpRequest();
+//let json = 'li.json';
+//xhr.open('GET', json);
+
+//xhr.responseType = 'json';
+//xhr.onload = function() {};
+//xhr.send();
 
 
 

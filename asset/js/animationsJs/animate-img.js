@@ -8,7 +8,7 @@ Move (rotate) the image
 function startAnimationImg(){
     myImg.style.cssText = `
      transform-origin : center center;
-     transform : rotate(45deg)
+     transform : rotate(45deg);
     `;
 }
 
@@ -22,3 +22,4 @@ function stopAnimationImg() {
      transform: rotate(360deg)
     `;
 }
+
