@@ -1,11 +1,11 @@
 // Image animation
 let myImg = document.querySelector('figure');
-myImg.addEventListener('mouseenter', moveImg);
+myImg.addEventListener('mouseenter', startAnimationImg);
 
 /*
-Move the image
+Move (rotate) the image
  */
-function moveImg(){
+function startAnimationImg(){
     myImg.style.cssText = `
      transform-origin : center center;
      transform : rotate(45deg)
@@ -15,9 +15,9 @@ function moveImg(){
 /*
  Refresh the img
  */
-myImg.addEventListener('click', refreshImg);
+myImg.addEventListener('click', stopAnimationImg);
 
-function refreshImg() {
+function stopAnimationImg() {
     myImg.style.cssText = `
      transform: rotate(360deg)
     `;

@@ -3,7 +3,7 @@ let arrow = document.getElementById('arrowDetail');
 let form = document.querySelector('form');
 
 arrow.addEventListener('click', displayForm);
-arrow.addEventListener('dblclick', resetForm);
+arrow.addEventListener('dblclick', hideForm);
 
 /*
  Display form
@@ -13,8 +13,8 @@ function displayForm() {
 }
 
 /*
-Refresh form
+Hide form
  */
-function resetForm() {
+function hideForm() {
     form.style.display = 'none';
 }

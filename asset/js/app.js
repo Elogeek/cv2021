@@ -2,11 +2,11 @@
  Dancing letters animation label
 */
 let label = document.querySelectorAll('label');
+let myForm = document.querySelector('form');
 
 /*
 Generate a random colors
 */
-
 function rainbowColor() {
     let color = '';
     for(let i = 0; i < 3; i++) {
@@ -16,14 +16,14 @@ function rainbowColor() {
     return "#" + color;
 }
 
-// Cool ma function est géniale !!!!
+// Create a span
 let span = document.createElement('span');
 span.innerHTML = rainbowColor();
 document.body.append(span);
 
-// Create a span
+// Add span in the form
 span.id = 'resultDancingColor';
-span.prepend(label);
+myForm.appendChild(span);
 
 
 
