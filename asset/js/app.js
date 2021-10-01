@@ -1,48 +1,61 @@
-/*
- Dancing letters animation label
-*/
-let label = document.querySelectorAll('label');
-let myForm = document.querySelector('fieldset');
+// Recovery the file dd.
+let myDefinition = document.getElementById('worldDefinition');
+const xhr = new XMLHttpRequest();
+xhr.open('GET', json, true);
+let json = 'dd.json';
 
-/*
-Generate a random colors
-*/
-function rainbowColor() {
-    let color = '';
-    for(let i = 0; i < 3; i++) {
-        let random = Math.floor(Math.random() * 256).toString(16);
-        color += (random.length ===  1 ? "0" + random : random);
+xhr.responseType = 'json';
+xhr.onload = function() {
+    if(xhr.responseText) {
+        const error = JSON.parse(xhr.responseText);
+        alert(error);
     }
-    return "#" + color;
+    else {
+        myDefinition = xhr.responseText;
+
+        let dt = document.createElement('dt');
+        dt.textContent = myDefinition[i]['word'];
+        myDefinition.appendChild(dt);
+
+        let dd = document.createElement('dd');
+        dd.textContent = myDefinition[i]['definition']
+        myDefinition.appendChild(dd);
+    }
+
+};
+
+
+xhr.send(JSON.stringify(xhr));
+
+
+// Recovery the file li.json
+
+let xhr2 = new XMLHttpRequest();
+let fileJson = 'li.json';
+xhr2.open('GET', json, true);
+
+xhr2.responseType = 'json';
+xhr2.onload = function() {
+    if (this.readyState === 4 && this.status === 200) {
+        document.getElementById("firstLi").innerHTML = xhr2.responseText;
+        document.getElementById("twoLi").textContent = xhr2.responseText;
+    }
 }
 
-// Create a span
-let span = document.createElement('span');
-span.innerHTML = rainbowColor();
-document.body.append(span);
-
-// Add span in the form
-span.id = 'resultDancingColor';
-myForm.appendChild(span);
-
-// Recovery the file li.json TODO
-
-//const xhr = new XMLHttpRequest();
-//let json = 'li.json';
-//xhr.open('GET', json);
-
-//xhr.responseType = 'json';
-//xhr.onload = function() {};
-//xhr.send();
-
-
-
-// Recovery the file dd.json
+xhr2.send();
 
 /*  Design footer
 let footer = document.querySelector('footer');
 footer.style.display = 'none';
  */
+
+
+
+
+
+
+
+
 
 
 
