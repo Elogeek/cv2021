@@ -1,38 +1,34 @@
 // Recovery the file dd.
 let myDefinition = document.getElementById('worldDefinition');
-const xhr = new XMLHttpRequest();
-xhr.open('GET', json, true);
-let json = 'dd.json';
+const word = document.getElementById('word');
+const definitionWord = document.getElementById('definition');
 
+const xhr = new XMLHttpRequest();
+xhr.open('GET', 'asset/js/dd.json', true);
 xhr.responseType = 'json';
+
+
 xhr.onload = function() {
-    if(xhr.responseText) {
+    if(xhr.status !== 200) {
         const error = JSON.parse(xhr.responseText);
         alert(error);
     }
-    else {
-        myDefinition = xhr.responseText;
+    let response = xhr.response;
+    console.log(response);
 
-        let dt = document.createElement('dt');
-        dt.textContent = myDefinition['word'];
-        myDefinition.appendChild(dt);
+   word.innerHTM = response.word;
+   definitionWord.textContent = response.definition;
 
-        let dd = document.createElement('dd');
-        dd.textContent = myDefinition['definition']
-        myDefinition.appendChild(dd);
-    }
 
 };
-
 
 xhr.send(JSON.stringify(xhr));
 
 
-// Recovery the file li.json
+/* Recovery the file li.json
 
 let xhr2 = new XMLHttpRequest();
-let fileJson = 'li.json';
-xhr2.open('GET', json, true);
+xhr2.open('GET', 'asset/js/dd.json', true);
 
 xhr2.responseType = 'json';
 xhr2.onload = function() {
