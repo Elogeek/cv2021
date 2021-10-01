@@ -14,11 +14,11 @@ xhr.onload = function() {
         myDefinition = xhr.responseText;
 
         let dt = document.createElement('dt');
-        dt.textContent = myDefinition[i]['word'];
+        dt.textContent = myDefinition['word'];
         myDefinition.appendChild(dt);
 
         let dd = document.createElement('dd');
-        dd.textContent = myDefinition[i]['definition']
+        dd.textContent = myDefinition['definition']
         myDefinition.appendChild(dd);
     }
 
