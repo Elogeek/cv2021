@@ -130,7 +130,43 @@ footer {
     font-size: 20px;
 } */
 
-/* todo responsive mode */
-@media screen and (max-width: 0px) {
+/* Responsive mode */
+@media screen and (max-width: 2000px) {
+    header h2 {
+        padding: 1rem;
+    }
+    fieldset {
+        height: 12vh;
+    }
+    nav i {
+        font-size: 3.5rem;
+    }
+    header {
+        height: 17vh;
+    }
+    aside li, #experience {
+        padding: 0.4rem;
+    }
+}
+
+@media screen and (max-width: 300px){
+    fieldset {
+        padding: 0.5rem;
+    }
+
+    nav i {
+        font-size: 3.5rem;
+    }
+
+    header {
+        height: 17vh;
+    }
+
+    img {
+        max-width: 179px;
+    }
+    aside li, #experience,table {
+        padding: 0.4rem;
+    }
 
 }
