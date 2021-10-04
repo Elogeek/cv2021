@@ -40,7 +40,7 @@ requestXhr.open('GET', 'asset/js/li.json', true);
 
  requestXhr.onload = function() {
     if (this.status !== 200) {
-       const errorBis = JSON.parse(requestXhr.responseText);
+        const errorBis = JSON.parse(requestXhr.responseText);
         alert(errorBis);
     }
     else {
