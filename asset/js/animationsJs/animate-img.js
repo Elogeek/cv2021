@@ -1,25 +1,22 @@
 // Image animation
-let myImg = document.querySelector('figure');
-myImg.addEventListener('mouseenter', startAnimationImg);
+let figureImg = document.querySelector('figure');
+figureImg.addEventListener('mouseenter', startAnimationImg);
 
 /*
 Move (rotate) the image
  */
 function startAnimationImg(){
-    myImg.style.cssText = `
-     transform-origin : center center;
-     transform : rotate(45deg);
-    `;
+    figureImg.animate([{transform: 'rotateY(0deg)' }], {delay : 1000, duration : 1000, fill : "forwards" })
+    figureImg.animate([{transform: 'rotateY(90deg)'}], {delay : 1000, fill: "forwards"})
+    figureImg.animate([{transform: 'rotateX(360deg)' }], {delay : 1000, duration : 1000, fill : "forwards" })
 }
 
 /*
- Refresh the img
+ Stop rotate the img
  */
-myImg.addEventListener('click', stopAnimationImg);
+figureImg.addEventListener('mouseleave', stopAnimationImg);
 
 function stopAnimationImg() {
-    myImg.style.cssText = `
-     transform: rotate(360deg)
-    `;
-}
+   figureImg.style.animationPlayState = "paused";
 
+}

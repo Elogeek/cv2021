@@ -1,7 +1,5 @@
 // Recovery the file dd.
-let myDefinition = document.getElementById('worldDefinition');
-const word = document.getElementById('word');
-const definitionWord = document.getElementById('definition');
+let dl = document.getElementById('wordDefinition');
 
 const xhr = new XMLHttpRequest();
 xhr.open('GET', 'asset/js/dd.json', true);
@@ -13,38 +11,65 @@ xhr.onload = function() {
         const error = JSON.parse(xhr.responseText);
         alert(error);
     }
-    let response = xhr.response;
-    console.log(response);
+    let result = xhr.response;
+    console.log(result);
+    wordSearch(result);
+    // select word and definition in json file
+    function wordSearch (result) {
+        for (let i = 0; i<=result.length; i++) {
+            let dt = document.createElement('dt');
+            dt.textContent = result[i]['word'];
+            dl.appendChild(dt);
 
-   word.innerHTM = response.word;
-   definitionWord.textContent = response.definition;
-
+            let dd = document.createElement('dd');
+            dd.textContent = result[i]['definition']
+            dl.appendChild(dd);
+        }
+    }
 
 };
 
 xhr.send(JSON.stringify(xhr));
 
 
-/* Recovery the file li.json
+/* Recovery the file li.json */
+let listLi = document.getElementById('listLi');
 
-let xhr2 = new XMLHttpRequest();
-xhr2.open('GET', 'asset/js/dd.json', true);
+let requestXhr = new XMLHttpRequest();
+requestXhr.open('GET', 'asset/js/li.json', true);
+ requestXhr.responseType = 'json';
 
-xhr2.responseType = 'json';
-xhr2.onload = function() {
-    if (this.readyState === 4 && this.status === 200) {
-        document.getElementById("firstLi").innerHTML = xhr2.responseText;
-        document.getElementById("twoLi").textContent = xhr2.responseText;
+ requestXhr.onload = function() {
+    if (this.status === 200) {
+       const errorBis = JSON.parse(requestXhr.responseText);
+        alert(errorBis);
+    }
+     let content = requestXhr.response;
+     console.log(content)
+     links(content);
+
+ };
+
+// select all li in json file
+function links(content) {
+    let ul = document.createElement('ul');
+    ul.className = 'links';
+    listLi.appendChild(ul);
+    let linkContent = document.querySelector('.links');
+
+    for (let i = 0; i <= content.length; i++) {
+        let li = document.createElement('li');
+        li.textContent = "<a href='" + content[i]['un'] + "'>" + "</a>";
+        linkContent.appendChild(li);
     }
 }
+requestXhr.send(JSON.stringify(requestXhr));
 
-xhr2.send();
 
 /*  Design footer
 let footer = document.querySelector('footer');
 footer.style.display = 'none';
  */
-
 
 
 

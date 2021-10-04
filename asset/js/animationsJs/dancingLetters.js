@@ -29,13 +29,6 @@ for(let i = 0, letter = label.length; i < letter; ++i) {
             span.textContent = b[a];
             span.style.color = rainbowColor() ;
 
-            if(a %2 === 0) {
-                span.style.fontFamily = 'Indie Flower', 'cursive';
-            }
-            else {
-                span.style.fontFamily = 'Dela Gothic One', 'cursive';
-            }
-
         }
 
     })
