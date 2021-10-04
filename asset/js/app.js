@@ -12,17 +12,16 @@ xhr.onload = function() {
         alert(error);
     }
     let result = xhr.response;
-    console.log(result);
     wordSearch(result);
-    // select word and definition in json file
+    // Select word and definition in json file
     function wordSearch (result) {
         for (let i = 0; i<=result.length; i++) {
             let dt = document.createElement('dt');
-            dt.textContent = result[i]['word'];
+            dt.textContent = result[i] ['word'];
             dl.appendChild(dt);
 
             let dd = document.createElement('dd');
-            dd.textContent = result[i]['definition']
+            dd.textContent = result[i] ['definition'];
             dl.appendChild(dd);
         }
     }
@@ -40,29 +39,30 @@ requestXhr.open('GET', 'asset/js/li.json', true);
  requestXhr.responseType = 'json';
 
  requestXhr.onload = function() {
-    if (this.status === 200) {
+    if (this.status !== 200) {
        const errorBis = JSON.parse(requestXhr.responseText);
         alert(errorBis);
     }
-     let content = requestXhr.response;
-     console.log(content)
-     links(content);
+    else {
+        let resultBis = requestXhr.response;
+        searchLi(resultBis);
+    }
+
+     // Select all li in json file
+     function searchLi (resultBis) {
+         for (let i = 0; i<=resultBis.length; i++) {
+             let li = document.createElement('li');
+             li.textContent = resultBis[i]['firstLi'];
+             listLi.appendChild(li);
+
+             let lili = document.createElement('li');
+             lili.textContent = resultBis[i]['twoLi']
+             listLi.appendChild(li);
+         }
+    }
 
  };
 
-// select all li in json file
-function links(content) {
-    let ul = document.createElement('ul');
-    ul.className = 'links';
-    listLi.appendChild(ul);
-    let linkContent = document.querySelector('.links');
-
-    for (let i = 0; i <= content.length; i++) {
-        let li = document.createElement('li');
-        li.textContent = "<a href='" + content[i]['un'] + "'>" + "</a>";
-        linkContent.appendChild(li);
-    }
-}
 requestXhr.send(JSON.stringify(requestXhr));
 
 
