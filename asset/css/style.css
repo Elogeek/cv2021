@@ -162,7 +162,7 @@ footer {
 } */
 
 /* Responsive mode */
-@media screen and (max-width: 2000px) {
+@media screen and(max-width: 2000px) {
     header h2 {
         padding: 1rem;
     }
@@ -178,19 +178,24 @@ footer {
     aside li, #experience {
         padding: 0.4rem;
     }
+
 }
 
 @media screen and (max-width: 300px){
     fieldset {
         padding: 0.5rem;
+        height: 48vh;
     }
 
     nav i {
          font-size: 3.5rem;
     }
+    nav a {
+        margin-left: 0.8rem;
+    }
 
     header {
-        height: 17vh;
+        height: 20vh;
     }
 
     img {

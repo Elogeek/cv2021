@@ -28,7 +28,7 @@ xhr.onload = function() {
 
 };
 
-xhr.send(JSON.stringify(xhr));
+xhr.send();
 
 
 /* Recovery the file li.json */
@@ -57,13 +57,13 @@ requestXhr.open('GET', 'asset/js/li.json', true);
 
              let lili = document.createElement('li');
              lili.textContent = resultBis[i]['twoLi']
-             listLi.appendChild(li);
+             listLi.appendChild(lili);
          }
     }
 
  };
 
-requestXhr.send(JSON.stringify(requestXhr));
+requestXhr.send();
 
 
 /*  Design footer
