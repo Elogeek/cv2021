@@ -2,7 +2,7 @@
 $(document).ready(function() {
 
     $('h2').mouseover(function() {
-        $(this).animate({transform: 'translateY(15px)'}, 1000).animate({transform: 'translateX(-300px)'}, 1000)
+        $(this).animate().css({transform: 'translateY(15px)'},1000).animate({transform: 'translateX(-300px)'}, 1000)
     });
 
     $('h2').mouseleave(function () {
