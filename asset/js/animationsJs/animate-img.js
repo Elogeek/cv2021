@@ -1,22 +1,9 @@
 // Image animation
-let figureImg = document.querySelector('figure');
-figureImg.addEventListener('mouseenter', startAnimationImg);
+$(document).ready( function() {
+    $('#figureImg').hover(
+        function () {$(this).animate('rotateY(0deg)',1000).animate('rotateY(90deg)',1000).animate('rotateX(360deg)',1000)
+        },
+        function () {$(this).stop()}
+    );
 
-/*
-Move (rotate) the image
- */
-function startAnimationImg(){
-    figureImg.animate([{transform: 'rotateY(0deg)' }], {delay : 1000, duration : 1000, fill : "forwards" })
-    figureImg.animate([{transform: 'rotateY(90deg)'}], {delay : 1000, fill: "forwards"})
-    figureImg.animate([{transform: 'rotateX(360deg)' }], {delay : 1000, duration : 1000, fill : "forwards" })
-}
-
-/*
- Stop rotate the img
- */
-figureImg.addEventListener('mouseleave', stopAnimationImg);
-
-function stopAnimationImg() {
-   figureImg.style.animationPlayState = "paused";
-
-}
+});

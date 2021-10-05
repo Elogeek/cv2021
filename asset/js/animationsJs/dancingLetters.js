@@ -1,7 +1,4 @@
-/*
- Dancing letters animation label
-*/
-let label = document.querySelectorAll('label');
+// Dancing letters animation label
 
 /*
 Generate a random colors
@@ -15,22 +12,25 @@ function rainbowColor() {
     return "#" + color;
 }
 
-// for each letter
-for(let i = 0, letter = label.length; i < letter; ++i) {
-    label[i].addEventListener('mouseenter', function () {
-        let b = label[i].textContent;
-        label[i].innerHTML = '';
+// one span by letter
 
-        for(let a = 0, letters = b.length; a < letters; ++a) {
+$('label').on('mouseenter', function () {
+    $(this).each(function (index, value) {
+        let b = this.textContent;
+        this.innerHTML = '';
+
+        for (let a = 0, letters = b.length; a < letters; ++a) {
             // Create a span
             let span = document.createElement('span');
             span.id = 'resultDancingColor';
-            label[i].appendChild(span);
+            this.appendChild(span);
             span.textContent = b[a];
-            span.style.color = rainbowColor() ;
+            span.style.color = rainbowColor();
 
         }
 
     })
 
-}
+});
+
+
