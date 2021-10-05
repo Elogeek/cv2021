@@ -1,20 +1,10 @@
 // Animation <section>
-let arrow = document.getElementById('arrowDetail');
-let form = document.querySelector('form');
+$(document).ready(function() {
+    $('#arrowDetail').click(function() {
+        $(this).show().css({'display': 'flex'});
+    });
 
-arrow.addEventListener('click', displayForm);
-arrow.addEventListener('dblclick', hideForm);
-
-/*
- Display form
- */
-function displayForm() {
-    form.style.display = 'flex';
-}
-
-/*
-Hide form
- */
-function hideForm() {
-    form.style.display = 'none';
-}
+    $('form').dblclick(function() {
+        $(this).hide().css({'display': 'none'});
+    });
+});
