@@ -1,18 +1,15 @@
 // Animation h2
 $(document).ready(function() {
 
-    $('h2').hover(function () {
+    $('h2').mouseover(function() {
+        $(this).animate({transform: 'translateY(15px)'}, 1000).animate({transform: 'translateX(-300px)'}, 1000)
+    });
 
-            $(this).animate({transform: 'translateY(15px)'}).animate({transform: 'translateX(-300px)'})
-        },
-        function() {
-            $(this).stop(true);
-        })
+    $('h2').mouseleave(function () {
+        $(this).stop(true);
+    })
+
 });
-
-
-
-
 
 
 

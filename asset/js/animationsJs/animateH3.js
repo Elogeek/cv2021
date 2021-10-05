@@ -1,36 +1,68 @@
-// Animation h3
-let titleSchool = document.getElementById('titleSchool');
-let tableTitle = document.getElementById('titleTable');
-let otherTitle = document.getElementById('titleExp');
+/* Animation h3 */
 
-// Start animation
-otherTitle.addEventListener('dblclick',startAnimationH3);
-tableTitle.addEventListener('dblclick',startAnimationH3);
-titleSchool.addEventListener('dblclick', startAnimationH3);
+$(document).ready(function() {
+    // Animation title school (diplômes)
+    $('#titleSchool').dblclick(function() {
+        $(this).css(
+            {
+                'font-size': '3rem',
+                'color': 'white',
+                'fontStyle' : 'italic',
+                'background-color': 'orange'
+            }
+        );
+    });
 
-/*
-    Change background-color the titles <h3>
- */
-function startAnimationH3() {
-    this.style.backgroundColor = 'orange';
-    this.style.fontSize = "3rem";
-    this.style.fontStyle = 'italic';
-    this.style.color = "white";
-}
+    $('#titleSchool').mouseover(function() {
+        $(this).css(
+            {
+                'font-size': '',
+                'background-color': 'white',
+                'color': 'crimson'
+            }
+        );
+    });
+    // Animation title table (hobbies)
+    $('#titleTable').dblclick(function() {
+        $(this).css(
+            {
+                'font-size': '3rem',
+                'color': 'white',
+                'fontStyle' : 'italic',
+                'background-color': 'orange'
+            }
+        );
+    });
 
-// Stop animation
-otherTitle.addEventListener('mouseover', stopAnimateH3);
-tableTitle.addEventListener('mouseover', stopAnimateH3);
-titleSchool.addEventListener('mouseover', stopAnimateH3);
+    $('#titleTable').mouseover(function() {
+        $(this).css(
+            {
+                'font-size': '',
+                'background-color': 'white',
+                'color': 'crimson'
+            }
+        );
+    });
+    // Animation title (expérience)
+    $('#titleExp').dblclick(function() {
+        $(this).css(
+            {
+                'font-size': '3rem',
+                'color': 'white',
+                'fontStyle' : 'italic',
+                'background-color': 'orange'
+            }
+        );
+    });
 
-/*
-Stop animation h3
- */
+    $('#titleExp').mouseover(function() {
+        $(this).css(
+            {
+                'font-size': '',
+                'background-color': 'white',
+                'color': 'crimson'
+            }
+        );
+    });
 
-function stopAnimateH3() {
-    this.style.cssText = `
-    background-color: white;
-    font-style: normal;
-    color: crimson;
-    `
-}
+});
