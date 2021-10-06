@@ -1,70 +1,55 @@
 //TODO HOME
 // Recovery the file dd.
-let dl = document.getElementById('wordDefinition');
-
-const xhr = new XMLHttpRequest();
-xhr.open('GET', 'asset/js/dd.json', true);
-xhr.responseType = 'json';
 
 
-xhr.onload = function() {
-    if(xhr.status !== 200) {
-        const error = JSON.parse(xhr.responseText);
-        alert(error);
-    }
-    let result = xhr.response;
-    console.log(result);
-    wordSearch(result);
-    // select word and definition in json file
-    function wordSearch (result) {
-        for (let i = 0; i<=result.length; i++) {
-            let dt = document.createElement('dt');
-            dt.textContent = result[i]['word'];
-            dl.appendChild(dt);
+$(document).ready(function () {
 
-            let dd = document.createElement('dd');
-            dd.textContent = result[i]['definition']
-            dl.appendChild(dd);
-        }
-    }
+    $.ajax({
+        url: "asset/js/dd.json",
+        method: "GET",
+        dataType: "json",
+        })
 
-};
+        // Code exécuté si succes
+        .done(function(result) {
+            // Convertir cette réponse en chaine JSON et insérer cette chaine dans #worddefinition
+            let data = JSON.stringify(result);
+            $("#wordDefinition").append(data);
+        })
 
-xhr.send(JSON.stringify(xhr));
+        // Code exécuté en cas d'échec
+        .fail(function(error) {
+            alert("la requête a échoué. infos : " + JSON.stringify(error)) ;
+        })
 
+        // Code sera exécuté que la requête soit un succès ou un échec
+        .always(function(){
+            alert("Requête effectuée");
+        });
 
-/* Recovery the file li.json */
-let listLi = document.getElementById('listLi');
+    // Récupération des li
+    $.ajax( {
+        url: "asset/js/li.json",
+        method: "GET",
+        dataType: "json",
+        })
 
-let requestXhr = new XMLHttpRequest();
-requestXhr.open('GET', 'asset/js/li.json', true);
- requestXhr.responseType = 'json';
+        // Code exécuté si succes
+        .done(function(response) {
+        // convertir en string JSON and insérer dans ul
+        })
 
- requestXhr.onload = function() {
-    if (this.status === 200) {
-       const errorBis = JSON.parse(requestXhr.responseText);
-        alert(errorBis);
-    }
-     let content = requestXhr.response;
-     console.log(content)
-     links(content);
+        // Code exécuté en cas d'échec
+        .fail(function(error) {
+            alert("la requête a échoué. infos : " + JSON.stringify(error)) ;
+        })
 
- };
+        // Code sera exécuté que la requête soit un succès ou un échec
+        .always(function(){
+            alert("Requête effectuée");
+        });
 
-// select all li in json file
-function links(content) {
-    let ul = document.createElement('ul');
-    ul.className = 'links';
-    listLi.appendChild(ul);
-    let linkContent = document.querySelector('.links');
-
-    for (let i = 0; i <= content.length; i++) {
-        let li = document.createElement('li');
-        li.textContent = "<a href='" + content[i]['un'] + "'>" + "</a>";
-        linkContent.appendChild(li);
-    }
-}
-requestXhr.send(JSON.stringify(requestXhr));
+    });
 
 
 /*  Design footer
