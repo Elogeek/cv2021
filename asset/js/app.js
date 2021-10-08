@@ -1,4 +1,4 @@
-// Recovery the file dd.
+/* Recovery the file dd.
 let dl = document.getElementById('wordDefinition');
 
 const xhr = new XMLHttpRequest();
@@ -32,7 +32,7 @@ xhr.onload = function() {
 xhr.send(JSON.stringify(xhr));
 
 
-/* Recovery the file li.json */
+/* Recovery the file li.json
 let listLi = document.getElementById('listLi');
 
 let requestXhr = new XMLHttpRequest();
@@ -50,7 +50,7 @@ requestXhr.open('GET', 'asset/js/li.json', true);
 
  };
 
-// select all li in json file
+ select all li in json file
 function links(content) {
     let ul = document.createElement('ul');
     ul.className = 'links';
@@ -66,7 +66,7 @@ function links(content) {
 requestXhr.send(JSON.stringify(requestXhr));
 
 
-/*  Design footer
+  Design footer
 let footer = document.querySelector('footer');
 footer.style.display = 'none';
  */
