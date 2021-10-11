@@ -1,3 +1,6 @@
+<?php
+require_once 'include.php';
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -72,7 +75,7 @@
                         <th>le Japon</th>
                         <th>
                             <figure>
-                                <img src="img/sakura.webp" alt="wonderful sakura">
+                                <img src="../asset/img/sakura.webp" alt="wonderful sakura">
                                 <figcaption>Super paysage!</figcaption>
                             </figure>
                         </th>

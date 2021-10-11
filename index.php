@@ -1,12 +1,18 @@
 <?php
 
-/**
-* Display the home page.
-*/
+use Controller\SectionController;
+use Model\Manager\SectionManager;
+use Model\User\UserManager;
+use Model\Entity\Role;
 
-function home() {
-// Display the home page if no action asked in get params.
-require_once $_SERVER['DOCUMENT_ROOT'] . '..//Controller/HomeController.php';
-$controller = new HomeController();
-$controller->index();
-}
+require_once $_SERVER['DOCUMENT_ROOT'] . '/include.php';
+
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+
+
+
+    // Créer un home controller qui ne fait que afficher la vue home.
+    $controller = new HomeController();
+    $controller->index();
+
