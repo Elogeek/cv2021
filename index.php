@@ -1,9 +1,9 @@
 <?php
 
-use Controller\SectionController;
-use Model\Manager\SectionManager;
-use Model\User\UserManager;
-use Model\Entity\Role;
+use App\Controller\UlController;
+use App\Model\Manager\UlManager;
+use App\Model\User\UserManager;
+use App\Model\Entity\Role;
 
 require_once $_SERVER['DOCUMENT_ROOT'] . '/include.php';
 
@@ -28,14 +28,14 @@ if (isset($_GET['controller'])) {
 
                 case 'update':
                     if (isset($_GET['list'])) {
-                        //$manager->updateArticle($_GET['article']);
+                        //$manager->updateList($_GET['list']);
                     } else {
-                        //$manager->updateArticle();
+                        //$manager->updateList();
                     }
                     break;
 
                 case 'delete':
-                    // $manager->deleteArticle();
+                    // $manager->deleteList();
                     break;
 
                 default:

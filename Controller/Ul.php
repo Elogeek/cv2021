@@ -3,7 +3,7 @@
 namespace Controller;
 
 use App\Model\Entity\Ul;
-use Model\Manager\UlManager;
+use App\Model\Manager\UlManager;
 
 class UlController {
 
