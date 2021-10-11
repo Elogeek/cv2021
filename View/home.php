@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -67,11 +68,11 @@
             <div id="experience">
                 <h3 id="titleExp">Expérience</h3>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid cumque deserunt exercitationem
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid cumque deserunt exercitationem
                     facilis id omnis quibusdam
                     rem tempore temporibus, ullam? Ab adipisci amet at, atque inventore quos recusandae rem sit.
-                    Blanditiis consequuntur deleniti dicta enim fugiat hic mollitia, omnis quas sunt tempora.
-                    Accusantium aperiam est eum eveniet id ipsum numquam odio quas recusandae, rerum tempore ullam ut
+Blanditiis consequuntur deleniti dicta enim fugiat hic mollitia, omnis quas sunt tempora.
+Accusantium aperiam est eum eveniet id ipsum numquam odio quas recusandae, rerum tempore ullam ut
                     voluptatem voluptatibus voluptatum!
                 </p>
             </div>
@@ -97,13 +98,5 @@
         <span>@Copyright reproduction interdite</span>
     </footer> -->
 </div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="asset/js/app.js"></script>
-<script src="asset/js/animationsJs/animateH1.js"></script>
-<script src="asset/js/animationsJs/animateH2.js"></script>
-<script src="asset/js/animationsJs/animateH3.js"></script>
-<script src="asset/js/animationsJs/animate-img.js"></script>
-<script src="asset/js/animationsJs/animate-section.js"></script>
-<script src="asset/js/animationsJs/dancingLetters.js"></script>
 </body>
 </html>
