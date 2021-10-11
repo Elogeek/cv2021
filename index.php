@@ -1,5 +1,12 @@
+<?php
 
-<script src="asset/js/app.js"></script>
+/**
+* Display the home page.
+*/
 
-<script src="asset/js/animate-section.js"></script>
-<script src="asset/js/dancingLetters.js"></script>
+function home() {
+// Display the home page if no action asked in get params.
+require_once $_SERVER['DOCUMENT_ROOT'] . '..//Controller/HomeController.php';
+$controller = new HomeController();
+$controller->index();
+}

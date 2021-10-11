@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exo1: CV 2021/2022</title>
     <script src="https://kit.fontawesome.com/e3ddf954eb.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="asset/css/style.css">
+    <link rel="stylesheet" href="../asset/css/style.css">
 </head>
 <body>
     <div class="container">
