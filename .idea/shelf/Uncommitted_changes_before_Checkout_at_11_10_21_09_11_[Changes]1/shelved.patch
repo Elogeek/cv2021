@@ -1,0 +1,345 @@
+Index: index.html
+===================================================================
+diff --git a/index.html b/index.html
+deleted file mode 100644
+--- a/index.html	
++++ /dev/null	
+@@ -1,109 +0,0 @@
+-<!DOCTYPE html>
+-<html lang="en">
+-<head>
+-    <meta charset="UTF-8">
+-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+-    <title>Exo1: CV 2021/2022</title>
+-    <script src="https://kit.fontawesome.com/e3ddf954eb.js" crossorigin="anonymous"></script>
+-    <link rel="stylesheet" href="asset/css/style.css">
+-</head>
+-<body>
+-<div class="container">
+-    <header>
+-        <h1>Elodie Christin</h1>
+-        <h2>Elogeek</h2>
+-    </header>
+-    <!-- Menu here-->
+-    <nav>
+-        <main>
+-            <div class="menu">
+-
+-                <!-- Home page-->
+-                <a href="index.html">Accueil<i class="fas fa-home"></i></a>
+-
+-                <!-- Graduation page-->
+-
+-                <a href="#education">Education<i class="fas fa-graduation-cap"></i></a>
+-
+-                <!-- Hobbies page-->
+-
+-                <a href="#hobbies">Hobbies<i class="fas fa-thumbs-up"></i></a>
+-
+-                <!-- Experience page-->
+-
+-                <a href="#experience">Expérience<i class="fas fa-spinner"></i></a>
+-            </div>
+-        </main>
+-
+-        <aside>
+-
+-            <h3 id="titleSchool">Diplômes</h3>
+-
+-            <ul id="listLi">
+-                <li class="links"></li>
+-                <li class="links"></li>
+-                <li>
+-                    <dl id="wordDefinition"></dl>
+-                </li>
+-            </ul>
+-
+-            <h3 id="titleTable">Hobbies</h3>
+-
+-            <table id="hobbies">
+-                <tbody>
+-                    <tr>
+-                        <th>la nature</th>
+-                        <th>
+-                            <figure id="figureImg" class="rotateImg">
+-                                <img src="asset/img/moutain.webp" alt="trop beau">
+-                                <figcaption>Super paysage!</figcaption>
+-                            </figure>
+-                        </th>
+-                    </tr>
+-
+-                </tbody>
+-            </table>
+-
+-            <div id="experience">
+-                <h3 id="titleExp">Expérience</h3>
+-                <p>
+-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid cumque deserunt exercitationem
+-                    facilis id omnis quibusdam
+-                    rem tempore temporibus, ullam? Ab adipisci amet at, atque inventore quos recusandae rem sit.
+-                    Blanditiis consequuntur deleniti dicta enim fugiat hic mollitia, omnis quas sunt tempora.
+-                    Accusantium aperiam est eum eveniet id ipsum numquam odio quas recusandae, rerum tempore ullam ut
+-                    voluptatem voluptatibus voluptatum!
+-                </p>
+-            </div>
+-
+-        </aside>
+-    </nav>
+-
+-    <section>
+-        <div class="contact">
+-            <div id="arrowDetail"><i class="fas fa-arrow-circle-right">Contact</i></div>
+-            <form  method="post" action="">
+-                <fieldset>
+-                    <label for="name"> Votre prénom  ici ! </label>
+-                    <input type="text" id="name" placeholder="Prénom" required>
+-                    <button type="submit" value="envoyer">envoyer</button>
+-                </fieldset>
+-            </form>
+-        </div>
+-    </section>
+-
+-  <!--  <footer>
+-        <span>Make by Elogeek</span>
+-        <span>@Copyright reproduction interdite</span>
+-    </footer> -->
+-</div>
+-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+-<script src="asset/js/app.js"></script>
+-<script src="asset/js/animationsJs/animateH1.js"></script>
+-<script src="asset/js/animationsJs/animateH2.js"></script>
+-<script src="asset/js/animationsJs/animateH3.js"></script>
+-<script src="asset/js/animationsJs/animate-img.js"></script>
+-<script src="asset/js/animationsJs/animate-section.js"></script>
+-<script src="asset/js/animationsJs/dancingLetters.js"></script>
+-</body>
+-</html>
+\ No newline at end of file
+Index: index.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/index.php b/index.php
+new file mode 100644
+--- /dev/null	
++++ b/index.php	
+@@ -0,0 +1,8 @@
++<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
++<script src="asset/js/app.js"></script>
++<script src="asset/js/animateH1.js"></script>
++<script src="asset/js/animateH2.js"></script>
++<script src="asset/js/animateH3.js"></script>
++<script src="asset/js/animate-img.js"></script>
++<script src="asset/js/animate-section.js"></script>
++<script src="asset/js/dancingLetters.js"></script>
+Index: View/home.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/View/home.php b/View/home.php
+new file mode 100644
+--- /dev/null	
++++ b/View/home.php	
+@@ -0,0 +1,102 @@
++
++<!DOCTYPE html>
++<html lang="en">
++<head>
++    <meta charset="UTF-8">
++    <meta name="viewport" content="width=device-width, initial-scale=1.0">
++    <title>Exo1: CV 2021/2022</title>
++    <script src="https://kit.fontawesome.com/e3ddf954eb.js" crossorigin="anonymous"></script>
++    <link rel="stylesheet" href="asset/css/style.css">
++</head>
++<body>
++<div class="container">
++    <header>
++        <h1>Elodie Christin</h1>
++        <h2>Elogeek</h2>
++    </header>
++    <!-- Menu here-->
++    <nav>
++        <main>
++            <div class="menu">
++
++                <!-- Home page-->
++                <a href="index.html">Accueil<i class="fas fa-home"></i></a>
++
++                <!-- Graduation page-->
++
++                <a href="#education">Education<i class="fas fa-graduation-cap"></i></a>
++
++                <!-- Hobbies page-->
++
++                <a href="#hobbies">Hobbies<i class="fas fa-thumbs-up"></i></a>
++
++                <!-- Experience page-->
++
++                <a href="#experience">Expérience<i class="fas fa-spinner"></i></a>
++            </div>
++        </main>
++
++        <aside>
++
++            <h3 id="titleSchool">Diplômes</h3>
++
++            <ul id="listLi">
++                <li class="links"></li>
++                <li class="links"></li>
++                <li>
++                    <dl id="wordDefinition"></dl>
++                </li>
++            </ul>
++
++            <h3 id="titleTable">Hobbies</h3>
++
++            <table id="hobbies">
++                <tbody>
++                    <tr>
++                        <th>la nature</th>
++                        <th>
++                            <figure id="figureImg" class="rotateImg">
++                                <img src="asset/img/moutain.webp" alt="trop beau">
++                                <figcaption>Super paysage!</figcaption>
++                            </figure>
++                        </th>
++                    </tr>
++
++                </tbody>
++            </table>
++
++            <div id="experience">
++                <h3 id="titleExp">Expérience</h3>
++                <p>
++Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid cumque deserunt exercitationem
++                    facilis id omnis quibusdam
++                    rem tempore temporibus, ullam? Ab adipisci amet at, atque inventore quos recusandae rem sit.
++Blanditiis consequuntur deleniti dicta enim fugiat hic mollitia, omnis quas sunt tempora.
++Accusantium aperiam est eum eveniet id ipsum numquam odio quas recusandae, rerum tempore ullam ut
++                    voluptatem voluptatibus voluptatum!
++                </p>
++            </div>
++
++        </aside>
++    </nav>
++
++    <section>
++        <div class="contact">
++            <div id="arrowDetail"><i class="fas fa-arrow-circle-right">Contact</i></div>
++            <form  method="post" action="">
++                <fieldset>
++                    <label for="name"> Votre prénom  ici ! </label>
++                    <input type="text" id="name" placeholder="Prénom" required>
++                    <button type="submit" value="envoyer">envoyer</button>
++                </fieldset>
++            </form>
++        </div>
++    </section>
++
++  <!--  <footer>
++        <span>Make by Elogeek</span>
++        <span>@Copyright reproduction interdite</span>
++    </footer> -->
++</div>
++</body>
++</html>
+\ No newline at end of file
+Index: Controller/HomeController.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Controller/HomeController.php b/Controller/HomeController.php
+new file mode 100644
+--- /dev/null	
++++ b/Controller/HomeController.php	
+@@ -0,0 +1,18 @@
++<?php
++
++class HomeController extends Controller {
++
++    private array $javaScripts;
++
++
++    /**
++     * HomeController constructor.
++     */
++    public function __construct() {
++        parent::__construct();
++        $this->javaScripts = [
++            '',
++            '',
++        ];
++    }
++}
+Index: Classe/Controller.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Classe/Controller.php b/Classe/Controller.php
+new file mode 100644
+--- /dev/null	
++++ b/Classe/Controller.php	
+@@ -0,0 +1,58 @@
++<?php
++
++
++
++class Controller {
++    private ?string $errorMessage = null;
++    private ?string $succesMessage = null;
++    private ?array $controllerJavascripts = null;
++
++    public function __construct(){}
++
++    public function showView(string $viewName, array $params = []) {
++        if(!is_null($this->controllerJavascripts)) {
++        $javaScripts = array_map(function ($js) { return '/assets/js/' . $js;}, $this->controllerJavaScripts);
++        $this->controllerJavaScripts = null;
++        }
++        else {
++                $javaScripts = [];
++            }
++
++        // Checking if there are at least one error or success message.
++        if(!is_null($this->errorMessage)) {
++        $error = $this->errorMessage;
++        $this->errorMessage = null;
++        }
++
++        if(!is_null($this->successMessage)) {
++            $success = $this->successMessage;
++            $this->successMessage = null;
++        }
++    }
++
++    /**
++     * Add an error message to be displayed.
++     * @param string $message
++     */
++    public function setErrorMessage(string $message) {
++        $this->errorMessage = $message;
++    }
++
++
++    /**
++     * Add a succes message to be displayed.
++     * @param string $message
++     */
++    public function setSuccessMessage(string $message) {
++        $this->successMessage = $message;
++    }
++
++    /**
++     * Add JavaScript to the next view.
++     * @param array $javaScripts
++     */
++    public function addJavaScript(array $javaScripts) {
++        $this->controllerJavaScripts = $javaScripts;
++    }
++
++}
+\ No newline at end of file

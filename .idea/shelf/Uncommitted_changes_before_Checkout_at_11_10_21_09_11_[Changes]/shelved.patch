@@ -1,0 +1,18 @@
+diff --git a/asset/js/animationsJs/dancingLetters.js b/asset/js/dancingLetters.js
+rename from asset/js/animationsJs/dancingLetters.js
+rename to asset/js/dancingLetters.js
+diff --git a/asset/js/animationsJs/animateH3.js b/asset/js/animateH3.js
+rename from asset/js/animationsJs/animateH3.js
+rename to asset/js/animateH3.js
+diff --git a/asset/js/animationsJs/animateH2.js b/asset/js/animateH2.js
+rename from asset/js/animationsJs/animateH2.js
+rename to asset/js/animateH2.js
+diff --git a/asset/js/animationsJs/animate-img.js b/asset/js/animate-img.js
+rename from asset/js/animationsJs/animate-img.js
+rename to asset/js/animate-img.js
+diff --git a/asset/js/animationsJs/animateH1.js b/asset/js/animateH1.js
+rename from asset/js/animationsJs/animateH1.js
+rename to asset/js/animateH1.js
+diff --git a/asset/js/animationsJs/animate-section.js b/asset/js/animate-section.js
+rename from asset/js/animationsJs/animate-section.js
+rename to asset/js/animate-section.js

@@ -1,0 +1,505 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="36a5de9d-b7b1-4989-ae10-ee0509b941f5" name="Changes" comment=" finish file Model in the versus php/sql">
+      <change beforePath="$PROJECT_DIR$/asset/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/asset/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="CSS File" />
+        <option value="tsconfig.json" />
+        <option value="TypeScript File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="php/Sql" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/asset/css/style.css" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 8.0" />
+  <component name="ProjectId" id="1yj6M8EbaVFpxGWFfsjVnHLCzQv" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/_docs" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/_docs" />
+      <recent name="$PROJECT_DIR$/img" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/asset/js" />
+      <recent name="$PROJECT_DIR$/asset" />
+      <recent name="$PROJECT_DIR$/Model" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/asset/js/animationsJs" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="36a5de9d-b7b1-4989-ae10-ee0509b941f5" name="Changes" comment="" />
+      <created>1632752603878</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1632752603878</updated>
+      <workItem from="1632752621250" duration="1463000" />
+      <workItem from="1632763378929" duration="801000" />
+      <workItem from="1632813462601" duration="5898000" />
+      <workItem from="1632823889119" duration="166000" />
+      <workItem from="1632824059993" duration="71000" />
+      <workItem from="1632927786560" duration="3481000" />
+      <workItem from="1632972480704" duration="705000" />
+      <workItem from="1632985703435" duration="16772000" />
+      <workItem from="1633003694964" duration="9129000" />
+      <workItem from="1633073197940" duration="8514000" />
+      <workItem from="1633083325435" duration="7775000" />
+      <workItem from="1633092487424" duration="1221000" />
+      <workItem from="1633331768013" duration="4805000" />
+      <workItem from="1633336844534" duration="4827000" />
+      <workItem from="1633422869923" duration="10374000" />
+      <workItem from="1633433713851" duration="72000" />
+      <workItem from="1633433901731" duration="36000" />
+      <workItem from="1633434229167" duration="725000" />
+      <workItem from="1633435905678" duration="882000" />
+      <workItem from="1633441211389" duration="737000" />
+      <workItem from="1633442456509" duration="1347000" />
+      <workItem from="1633505394832" duration="4380000" />
+      <workItem from="1633509851594" duration="1554000" />
+      <workItem from="1633528856748" duration="610000" />
+      <workItem from="1633597688977" duration="2285000" />
+      <workItem from="1633610090838" duration="230000" />
+      <workItem from="1633679343466" duration="2493000" />
+      <workItem from="1633686974300" duration="334000" />
+      <workItem from="1633687407336" duration="16354000" />
+      <workItem from="1633936296103" duration="188000" />
+      <workItem from="1633936492888" duration="814000" />
+      <workItem from="1633937830978" duration="63000" />
+    </task>
+    <task id="LOCAL-00002" summary="suite ( Cv)">
+      <created>1632764159872</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1632764159872</updated>
+    </task>
+    <task id="LOCAL-00003" summary="finish version pc cv">
+      <created>1632818934829</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1632818934829</updated>
+    </task>
+    <task id="LOCAL-00004" summary="start version responsive cv">
+      <created>1632824068662</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1632824068662</updated>
+    </task>
+    <task id="LOCAL-00005" summary="start version responsive cv">
+      <created>1632928540047</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1632928540047</updated>
+    </task>
+    <task id="LOCAL-00006" summary="start version js">
+      <created>1632935144161</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1632935144161</updated>
+    </task>
+    <task id="LOCAL-00007" summary="start version js">
+      <created>1632973074337</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1632973074337</updated>
+    </task>
+    <task id="LOCAL-00008" summary="suite version js">
+      <created>1632997075570</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1632997075570</updated>
+    </task>
+    <task id="LOCAL-00009" summary="reogarnisation version js">
+      <created>1632998325361</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1632998325361</updated>
+    </task>
+    <task id="LOCAL-00010" summary="reogarnisation version main">
+      <created>1632999176054</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1632999176054</updated>
+    </task>
+    <task id="LOCAL-00011" summary="files json">
+      <created>1633002511459</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1633002511459</updated>
+    </task>
+    <task id="LOCAL-00012" summary="SUITE CV VERSION js">
+      <created>1633003237527</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1633003237527</updated>
+    </task>
+    <task id="LOCAL-00013" summary="reorganisation files js">
+      <created>1633006896450</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1633006896450</updated>
+    </task>
+    <task id="LOCAL-00014" summary="reorganisation file img">
+      <created>1633006964358</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1633006964358</updated>
+    </task>
+    <task id="LOCAL-00015" summary="reorganisation files version js">
+      <created>1633007712154</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1633007712154</updated>
+    </task>
+    <task id="LOCAL-00016" summary="reorganisation files version js">
+      <created>1633009851337</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1633009851337</updated>
+    </task>
+    <task id="LOCAL-00017" summary="create function rainbowColor for dancing letters in the version js">
+      <created>1633012865021</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1633012865021</updated>
+    </task>
+    <task id="LOCAL-00018" summary="create function rainbowColor for dancing letters in the version js">
+      <created>1633013309270</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1633013309270</updated>
+    </task>
+    <task id="LOCAL-00019" summary="reorganisation dossier animation and start and finish adaptation smartphone in the version js">
+      <created>1633076975384</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1633076975384</updated>
+    </task>
+    <task id="LOCAL-00020" summary="reorganisation dossier animation and start and finish adaptation smartphone in the version js">
+      <created>1633077051526</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1633077051526</updated>
+    </task>
+    <task id="LOCAL-00021" summary=" start and finish adaptation smartphone">
+      <created>1633077108889</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1633077108889</updated>
+    </task>
+    <task id="LOCAL-00022" summary="suite version js">
+      <created>1633082399296</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1633082399296</updated>
+    </task>
+    <task id="LOCAL-00023" summary="finish animation dancing letters and start requests AJAX (version js)">
+      <created>1633090813075</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1633090813075</updated>
+    </task>
+    <task id="LOCAL-00024" summary="suite requests AJAX (version js)">
+      <created>1633090927300</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1633090927300</updated>
+    </task>
+    <task id="LOCAL-00025" summary="suite requests AJAX (version js)">
+      <created>1633091094930</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1633091094930</updated>
+    </task>
+    <task id="LOCAL-00026" summary="suite requests AJAX (version js)">
+      <created>1633093691612</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1633093691618</updated>
+    </task>
+    <task id="LOCAL-00027" summary="finish requests AJAX (version js)">
+      <created>1633336566669</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1633336566669</updated>
+    </task>
+    <task id="LOCAL-00028" summary="finish requests AJAX (version js)">
+      <created>1633337965137</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1633337965138</updated>
+    </task>
+    <task id="LOCAL-00029" summary="finish requests AJAX (version js)">
+      <created>1633339736872</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1633339736872</updated>
+    </task>
+    <task id="LOCAL-00030" summary="finish requests AJAX (version js)">
+      <created>1633340697660</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1633340697661</updated>
+    </task>
+    <task id="LOCAL-00031" summary="start version jQuery">
+      <created>1633352478925</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1633352478925</updated>
+    </task>
+    <task id="LOCAL-00032" summary="start and finish animation h1 jQuery">
+      <created>1633428255612</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1633428255612</updated>
+    </task>
+    <task id="LOCAL-00033" summary="start and finish animation h3 jQuery">
+      <created>1633429748388</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1633429748388</updated>
+    </task>
+    <task id="LOCAL-00034" summary="start and finish animation section form jQuery">
+      <created>1633430170440</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1633430170440</updated>
+    </task>
+    <task id="LOCAL-00035" summary="start and finish animation section form jQuery">
+      <created>1633430522967</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1633430522967</updated>
+    </task>
+    <task id="LOCAL-00036" summary="start and finish dancing letters form jQuery">
+      <created>1633432166974</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1633432166974</updated>
+    </task>
+    <task id="LOCAL-00037" summary="start and finish animation h2 and start animation img form jQuery">
+      <created>1633432837890</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1633432837890</updated>
+    </task>
+    <task id="LOCAL-00038" summary=" animation img form jQuery">
+      <created>1633433208607</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1633433208607</updated>
+    </task>
+    <task id="LOCAL-00039" summary=" animation img form jQuery">
+      <created>1633433770247</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1633433770247</updated>
+    </task>
+    <task id="LOCAL-00040" summary=" animation img form jQuery">
+      <created>1633433927286</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1633433927286</updated>
+    </task>
+    <task id="LOCAL-00041" summary=" finish animation img form jQuery">
+      <created>1633434945389</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1633434945389</updated>
+    </task>
+    <task id="LOCAL-00042" summary=" finish animation img form jQuery">
+      <created>1633436774698</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1633436774698</updated>
+    </task>
+    <task id="LOCAL-00043" summary=" modif h2 form jQuery">
+      <created>1633443786804</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1633443786804</updated>
+    </task>
+    <task id="LOCAL-00044" summary=" start requests ajax in the jQuery">
+      <created>1633507782054</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1633507782054</updated>
+    </task>
+    <task id="LOCAL-00045" summary=" start Cv versus php/sql">
+      <created>1633508929424</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1633508929424</updated>
+    </task>
+    <task id="LOCAL-00046" summary=" start Cv versus php/sql">
+      <created>1633608723193</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1633608723193</updated>
+    </task>
+    <task id="LOCAL-00047" summary=" finish file Model in the versus php/sql">
+      <created>1633702617162</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1633702617162</updated>
+    </task>
+    <task id="LOCAL-00048" summary=" finish file Model in the versus php/sql">
+      <created>1633702684298</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1633702684298</updated>
+    </task>
+    <task id="LOCAL-00049" summary=" finish file Model in the versus php/sql">
+      <created>1633702699998</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1633702699998</updated>
+    </task>
+    <task id="LOCAL-00050" summary=" finish file Model in the versus php/sql">
+      <created>1633936822850</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1633936822850</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="files json" />
+    <MESSAGE value="SUITE CV VERSION js" />
+    <MESSAGE value="reorganisation files js" />
+    <MESSAGE value="reorganisation file img" />
+    <MESSAGE value="reorganisation files version js" />
+    <MESSAGE value="create function rainbowColor for dancing letters in the version js" />
+    <MESSAGE value="reorganisation dossier animation and start and finish adaptation smartphone in the version js" />
+    <MESSAGE value=" start and finish adaptation smartphone" />
+    <MESSAGE value="suite version js" />
+    <MESSAGE value="finish animation dancing letters and start requests AJAX (version js)" />
+    <MESSAGE value="suite requests AJAX (version js)" />
+    <MESSAGE value="finish requests AJAX (version js)" />
+    <MESSAGE value="start version jQuery" />
+    <MESSAGE value="start and finish animation h1 jQuery" />
+    <MESSAGE value="start and finish animation h3 jQuery" />
+    <MESSAGE value="start and finish animation section form jQuery" />
+    <MESSAGE value="start and finish dancing letters form jQuery" />
+    <MESSAGE value="start and finish animation h2 and start animation img form jQuery" />
+    <MESSAGE value=" animation img form jQuery" />
+    <MESSAGE value=" finish animation img form jQuery" />
+    <MESSAGE value=" modif h2 form jQuery" />
+    <MESSAGE value=" start requests ajax in the jQuery" />
+    <MESSAGE value=" start Cv versus php/sql" />
+    <MESSAGE value=" finish file Entity in the versus php/sql" />
+    <MESSAGE value=" finish file Model in the versus php/sql" />
+    <option name="LAST_COMMIT_MESSAGE" value=" finish file Model in the versus php/sql" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

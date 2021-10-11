@@ -56,20 +56,20 @@ nav a {
     color: crimson;
 }
 
-aside {
+section {
     text-align: center;
     font-size: 10px;
 }
 
-aside li {
+section li {
     list-style-type: none;
 }
 
+/* Design table */
 #titleTable {
     margin-top: 2rem;
 }
 
-/* Design table */
 table {
     margin-top: 2rem;
     display: flex;
