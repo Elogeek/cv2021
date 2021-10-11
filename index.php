@@ -12,7 +12,7 @@ ini_set('display_errors', 1);
 
 if (isset($_GET['controller'])) {
     switch ($_GET['controller']) {
-        case 'articles':
+        case 'ul':
             $controller = new UlController();
 
             switch ($_GET['action']) {

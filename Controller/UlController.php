@@ -1,9 +1,5 @@
 <?php
-
 namespace Controller;
-
-use App\Model\Entity\Ul;
-use App\Model\Manager\UlManager;
 
 class UlController {
 
