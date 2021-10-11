@@ -60,12 +60,12 @@ nav a {
     font-size: 15px;
 }
 
-aside {
+section {
     text-align: center;
     font-size: 10px;
 }
 
-aside li {
+section li {
     list-style-type: none;
     font-size: 15px;
 }
