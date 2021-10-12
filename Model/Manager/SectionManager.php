@@ -13,17 +13,22 @@ use PDOException;
 class SectionManager {
 
     /** Return a definition(s) via (id user) author-fk
-     * @param User $user
      * @param Dd $definition
-     * @param Section $section
-     * @return array
+     * @return User|null
      */
-    public function getAllDefinition(User $user, Dd $definition, Section $section): array {
+    public function getDefByUser(Dd $definition): ?User {
         $request = DB::getInstance()->prepare("SELECT COUNT(dd-fk) FROM section WHERE author-fk OR dd-fk > 0");
-        $request->bindValue('author-fk', $user->getId());
-        $request->bindValue('dd-fk', $definition->getContentDd());
-        $request->bindValue('dd-fk',$definition->getContentDt());
-        return [$request->execute()];
+        $request->bindValue('author-fk', $definition->getId());
+        $request->bindValue('dd-fk', $definition->getId());
+
+        if($request->execute() && $data = $request->fetchAll()) {
+            $sectionManager = new self();
+            foreach($data as $userData) {
+                $users[] = new self($userData['id'], $userData['author-fk'],$userData['dd-fk'],$userData['date']);
+            }
+        }
+
+        return [$users];
     }
 
     /** Return a list(content ul and li) via (id user) author-fk
@@ -32,7 +37,7 @@ class SectionManager {
      * @param Section $section
      * @return array
      */
-    public function getAllList(User $user, Ul $li, Section $section): array {
+    public function getListByUser(User $user, Ul $li, Section $section): array {
         $request = DB::getInstance()->prepare("SELECT COUNT(ul-fk) FROM section WHERE author-fk OR ul-fk > 0");
         $request->bindValue('author-fk', $user->getId());
         $request->bindValue('ul-fk', $li->getContentUl());

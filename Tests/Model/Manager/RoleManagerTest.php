@@ -19,7 +19,7 @@ Dumper::dieAndDump($role);
 $adminUsers = $manager->getRoles($role);
 Dumper::dieAndDump($adminUsers);
 
-//Test addRole()
+// Test addRole()
 $roleAdd = new Role();
 $roleAdd->setName('role test');
 $manager->addRole($roleAdd);
@@ -29,11 +29,10 @@ if($roleAdd->getId()) {
 }
 else {
     echo "Erreur en ajoutant le rôle<br>";
-    die(); //Stop the test script.
+    die();
 }
 
-//If the script continues after the test to add the role, then we can continue.
-//test retrieve a role by name.
+// Test retrieve a role by name.
 $roleByName = $manager->getRoleByName('role test');
 if($roleAdd->getId() === $roleByName->getId()) {
     echo "Le role a bien été récupéré et est égal à : 'role test'<br>";
@@ -43,8 +42,7 @@ else {
     die(); //Stop tne test script
 }
 
-//If the script continues, it means that we have been able to retrieve the role 'role test'
-//Test deleteRole()
+// Test deleteRole()
 if($manager->deleteRole($roleByName)) {
     echo "Le role a bien été supprimé<br>";
 }
@@ -52,6 +50,5 @@ else {
     echo "Le rôle n'a pas été supprimé<br>";
     die();
 }
-
 
 echo "<br>TOUTE LA CLASSE EST OK !<br>";

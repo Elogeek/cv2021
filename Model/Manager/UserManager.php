@@ -42,7 +42,7 @@ class UserManager {
         if ($result && $data) {
             $roleManager = new RoleManager();
             $role = $roleManager->getRoleById($data['role-fk']);
-            $user = new User($data['id'], $role, $data['username']);
+            $user = new User($data['id'],$data['username'],$role);
         }
         return $user;
     }
@@ -86,7 +86,7 @@ class UserManager {
      * @return bool
      */
     public function addUser(User $user): bool {
-        $request = DB::getInstance()->prepare("INSERT INTO user (username,password,roleFk) VALUES (:name,:password, :role)");
+        $request = DB::getInstance()->prepare("INSERT INTO user (username,password,roleFk) VALUES (:name,:password,:role)");
         $request->bindValue(':name', $user->getUsername());
         $request->bindValue(':password', DB::encodePassword($user->getPassword()));
         $request->bindValue(':role', $user->getRole()->getId());

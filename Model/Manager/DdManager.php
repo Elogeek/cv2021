@@ -7,7 +7,6 @@ use Model\DB;
 use PDO;
 use PDOException;
 
-
 class DdManager {
 
     /** Return table all definitions
@@ -24,7 +23,6 @@ class DdManager {
         return $resultDd;
     }
 
-
     /** Return id a definition
      * @return bool
      */
@@ -38,8 +36,8 @@ class DdManager {
      * @param Dd $word
      * @return bool
      */
-    public function addDefinition(Dd $word): bool {
-        $request = DB::getInstance()->prepare("INSERT INTO dd VALUES('contentDd' = :contentWord, 'contentDt' = :contentDefinition)");
+    public function addWord(Dd $word): bool {
+        $request = DB::getInstance()->prepare("INSERT INTO dd (contentDd,contentDt) VALUES (:contentWord,:contentDefinition)");
         $request->bindValue(':contentWord', $word->getContentDd());
         $request->bindValue(':contentDefinition', $word->getContentDt());
         $res = $request->execute();
@@ -52,7 +50,7 @@ class DdManager {
      * @return bool
      */
     public function deleteWord(Dd $word): bool {
-        $request = DB::getInstance()->prepare("DELETE FROM dd WHER id = :id");
+        $request = DB::getInstance()->prepare("DELETE FROM dd WHERE id = :id");
         $request->bindValue(':id', $word->getId());
         return $request->execute();
     }

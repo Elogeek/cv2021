@@ -80,7 +80,7 @@ else {
     die();
 }
 
-//delete user
+// Delete user
 if($userManager->deleteUser($user)) {
     echo "User supprimé<br>";
 }
@@ -88,7 +88,6 @@ else {
     echo "User pas supprimé<br>";
     die();
 }
-
 
 echo "<br>TOUTE LA CLASSE EST OK !<br>";
 
