@@ -13,41 +13,59 @@ use PDOException;
 class SectionManager {
 
     /** Return a definition(s) via (id user) author-fk
-     * @param Dd $definition
+     * @param int $id
      * @return User|null
      */
-    public function getDefByUser(Dd $definition): ?User {
-        $request = DB::getInstance()->prepare("SELECT COUNT(dd-fk) FROM section WHERE author-fk OR dd-fk > 0");
-        $request->bindValue('author-fk', $definition->getId());
-        $request->bindValue('dd-fk', $definition->getId());
-
-        if($request->execute() && $data = $request->fetchAll()) {
-            $sectionManager = new self();
-            foreach($data as $userData) {
-                $users[] = new self($userData['id'], $userData['author-fk'],$userData['dd-fk'],$userData['date']);
-            }
+    public function getDefByAuthor(int $id): ?Section {
+        $request = DB::getInstance()->prepare("SELECT COUNT(authorFk AS author) FROM section WHERE ddFk OR ddFk > 0");
+        $author = [];
+        $request->bindValue('author', $id);
+        $result = $request->execute();
+        $data = $request->fetch();
+        if ($result && $data) {
+            $author = new Section($data['id'],$data['authorFk'],$data['ulFk'],$data['ddFk'],$data['date']);
         }
-
-        return [$users];
+        return $author;
     }
 
-    /** Return a list(content ul and li) via (id user) author-fk
-     * @param User $user
-     * @param Ul $li
-     * @param Section $section
-     * @return array
+    /** Return a list(articles) by author-fk
+     * @param int $id
+     * @return Section
      */
-    public function getListByUser(User $user, Ul $li, Section $section): array {
-        $request = DB::getInstance()->prepare("SELECT COUNT(ul-fk) FROM section WHERE author-fk OR ul-fk > 0");
-        $request->bindValue('author-fk', $user->getId());
-        $request->bindValue('ul-fk', $li->getContentUl());
-        $request->bindValue('ul-fk', $li->getContentLi());
-        return [$request->execute()];
+    public function getListByAuthor(int $id): Section {
+        $request = DB::getInstance()->prepare("SELECT COUNT(author AS author) FROM section WHERE ulFk OR ulFk > 0");
+        $author = null;
+        $request->bindValue('author', $id);
+        $result = $request->execute();
+        $data = $request->fetch();
+        if ($result && $data) {
+            $author = new Section($data['id'],$data['authorFk'],$data['ulFk'],$data['ddFk'],$data['date']);
+        }
+        return $author;
     }
 
-    public function addSection(){
 
+
+
+    public function addSection(Section $section): bool {
+            $request = DB::getInstance()->prepare("INSERT INTO section (authorFk,ulFk,ddFk,date) VALUES (:author,:ul,:dd,:date)");
+            $request->bindValue(':author', $section->getAuthorFk());
+            $request->bindValue(':ul', $section->getUl());
+            $request->bindValue(':dd', $section->getDdFk());
+            $request->bindValue(':date', $section->getDate());
+            $result = $request->execute();
+            $section->setId(DB::getInstance()->lastInsertId());
+            return $result;
     }
 
-    public function deletSection(){}
+    /**
+     * @param Section $section
+     * @return bool
+     */
+    public function deleteSection(Section $section): bool {
+        $request = DB::getInstance()->prepare("DELETE FROM section WHERE id = :id");
+        $request->bindValue('id', $section->getId());
+        return $request->execute();
+   }
+
 }

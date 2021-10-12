@@ -19,14 +19,6 @@ $userManager = new UserManager();
 $user = $userManager->getById(2);
 Dumper::dieAndDump($user);
 
-// Add user
-$role = $user->getRole();
-$user = new User(null,'bubulle', '',$role, );
-$userManager->addUser($user);
 
-// Return a definition by id
-$sectionManager = new SectionManager();
-$x = $sectionManager->getDefByUser($user);
-Dumper::dieAndDump($x);
 
 
