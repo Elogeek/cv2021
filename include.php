@@ -15,5 +15,5 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/Model/Manager/SectionManager.php';
 require_once $_SERVER['DOCUMENT_ROOT'] . '/Model/Manager/DdManager.php';
 
 
-require_once $_SERVER['DOCUMENT_ROOT'] . '/Controller/HomeController.php';
+//require_once $_SERVER['DOCUMENT_ROOT'] . '/Controller/HomeController.php';
 

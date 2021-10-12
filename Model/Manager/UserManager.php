@@ -14,8 +14,8 @@ class UserManager {
      * @param User $user
      * @return bool
      */
-    public function addUser(User &$user): bool {
-        $request = DB::getInstance()->prepare("INSERT INTO user (name,password,role-fk) VALUES (:name,:password, :role)");
+    public function addUser(User $user): bool {
+        $request = DB::getInstance()->prepare("INSERT INTO user (username,password,role-fk) VALUES (:name,:password, :role)");
         $request->bindValue(':name', $user->getName());
         $request->bindValue(':password', DB::encodePassword($user->getPassword()));
         $request->bindValue(':role', $user->getRole()->getId());
@@ -28,14 +28,14 @@ class UserManager {
      * @param User $user
      * @return bool
      */
-    public function deleteUser(User $user) {
+    public function deleteUser(User $user): bool {
         $request = DB::getInstance()->prepare("DELETE FROM user WHERE id = :id");
         $request->bindValue('id', $user->getId());
         return $request->execute();
     }
 
     // Modify infos an user
-    public function updateUser(User $user) {
+    public function updateUser(User $user): bool {
         $request = DB::getInstance()->prepare("UPDATE user SET username = :username, role-fk = :role WHERE id = :id");
         $request->bindValue(':id', $user->getId());
         $request->bindValue(':username', $user->getUsername());

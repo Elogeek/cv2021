@@ -40,4 +40,9 @@ class SectionManager {
         return [$request->execute()];
     }
 
+    public function addSection(){
+
+    }
+
+    public function deletSection(){}
 }
