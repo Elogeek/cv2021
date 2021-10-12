@@ -7,6 +7,7 @@ use Model\DB;
 use PDO;
 use PDOException;
 
+
 class DdManager {
 
     /** Return table all definitions
@@ -14,19 +15,23 @@ class DdManager {
      */
     public function getDefinition(): array {
         $request = DB::getInstance()->prepare('SELECT * FROM dd');
-        $request->execute();
-        $result = $request->fetchAll();
-       // print_r($result);
-        return [$result];
+        $resultDd = [];
+       if($request->execute() && $data = $request->fetchAll()) {
+            foreach($data as $ddData) {
+                $resultDd[] = new Dd($ddData['id'], $ddData['contentDd'], $ddData['contentDt']);
+            }
+        }
+        return $resultDd;
     }
 
-    /** Return a definition via id
+
+    /** Return id a definition
      * @return bool
      */
-    public function getDefById(): bool {
+     public function getDefById(): bool {
         $request = DB::getInstance()->prepare("SELECT id FROM dd");
-        $request->execute();
-        return $request;
+        $def = $request->execute();
+        return $def;
     }
 
     /** Add a definition in the database
