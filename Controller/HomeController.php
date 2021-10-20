@@ -4,9 +4,7 @@ use App\Entity\Article;
 use App\Manager\ArticleManager;
 
 
-class HomeController extends Controller
-{
-
+class HomeController extends Controller {
 
     public function index(): void
     {

@@ -46,7 +46,7 @@ if (isset($_SESSION['id'], $_SESSION['username'], $_SESSION['key']))
                     ?>
                 </ul>
             </div>
-            <form name="addArticle" action="Controller/AddArticle.php?error=0" method="post">
+            <form name="addArticle" action="/Controller/../View/AddArticles.php?error=0" method="post">
                 <fieldset>
                     Name:
                     <input name="name" type="text" maxlength="45" required placeholder="title article">

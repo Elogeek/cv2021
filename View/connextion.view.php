@@ -14,17 +14,8 @@
             <div>
                 <input type="submit" value="connexion">
             </div>
+            <span><a href="register.view.php">Pas encore inscrit?</a></span>
         </form>
-        <form action="/php/register.php" method="post">
-            <div>
-                <input type="text" name="name" placeholder="Username">
-            </div>
-            <div>
-                <input type="password" name="password" id="pass" placeholder="Password">
-            </div>
-            <div>
-                <input type="submit" value="inscription">
-            </div>
-        </form>
+
     </div>
 </div>

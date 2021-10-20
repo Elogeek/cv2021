@@ -2,6 +2,8 @@
 <section>
 
     <h3 id="education">Diplômes</h3>
+    <ul class="listLi"></ul>
+    <dl id="wordDefinition"></dl>
 
     <h3 id="titleTable">Hobbies</h3>
 

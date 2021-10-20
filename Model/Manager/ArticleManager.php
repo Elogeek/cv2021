@@ -4,12 +4,13 @@ namespace App\Manager;
 
 use App\Entity\Article;
 use App\Entity\User;
+use Controller;
 use Model\DB;
 
 use PDO;
 use PDOException;
 
-class ArticleManager  {
+class ArticleManager {
 
 
     /**  Return all article in table section
@@ -33,7 +34,7 @@ class ArticleManager  {
      * @return Article|null
      */
     public function get($id): ?Article {
-        $request = DB::getInstance()->prepare("SELECT * FROM Article WHERE id = :id");
+        $request = DB::getInstance()->prepare("SELECT * FROM article WHERE id = :id");
         $request->bindValue(':id', $id);
         $result = $request->execute();
         $article = null;
@@ -46,32 +47,18 @@ class ArticleManager  {
     }
 
 
-    /** Return a article(s) of the author-fk
-     * @param int $id
-     * @return User|null
+    /** Add article in the BDD
+     * @param Article $art
+     * @return bool|null
      */
-    public function getDefByAuthor(int $id): ?Article {
-        $request = DB::getInstance()->prepare("SELECT COUNT(authorFk AS author) FROM article WHERE  id > 0");
-        $author = [];
-        $request->bindValue('author', $id);
-        $result = $request->execute();
-        $data = $request->fetch();
-        if ($result && $data) {
-            $author = new Article($data['id'], $data['title'], $data['content'],$data['authorFk']);
-        }
-        return $author;
-    }
+    public function addArticles(Article $art): ?bool {
+        $request = DB::getInstance()->prepare("INSERT INTO article (title,content,authorFk) VALUES (:t,:content,:authorFk)");
+        $request->bindValue(':t', $art->getTitle());
+        $request->bindValue(':content', $art->getContent());
+        $request->bindValue(':authorFk', $art->getAuthorFk());
 
+        return $request->execute() && DB::getInstance()->lastInsertId() !=0;
 
-    public function addArticles(Article $art): bool {
-            $request = DB::getInstance()->prepare("INSERT INTO article (title,content,authorFk) VALUES (:t,:content,:authorFk)");
-            $request->bindValue(':t', $art->getTitle());
-            $request->bindValue(':content', $art->getContent());
-            $request->bindValue(':authorFk', $art->getAuthorFk());
-
-            $result = $request->execute();
-            $art->setId(DB::getInstance()->lastInsertId());
-            return $result;
     }
 
     /**

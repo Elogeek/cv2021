@@ -14,11 +14,18 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/Model/Entity/Article.php';
 require_once $_SERVER['DOCUMENT_ROOT'] . '/Model/Manager/ArticleManager.php';
 require_once $_SERVER['DOCUMENT_ROOT'] . '/Model/Manager/UserManager.php';
 
-// Return a user by id
-$userManager = new UserManager();
-$user = $userManager->getById(2);
-Dumper::dieAndDump($user);
+// Return si une article est null ou pas
+$manager = new ArticleManager();
+$manager->get(1);
+if($manager){
+    echo" l'article existe";
+}
 
-
-
-
+$manager->addArticles("feer");
+if($manager){
+    print_r($manager);
+}
+/*
+$manager->deleteArticle();
+$manager->getAllArticles();
+*/
