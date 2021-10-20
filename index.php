@@ -1,7 +1,10 @@
 <?php
-require_once $_SERVER['DOCUMENT_ROOT'] . './include.php';
+use App\Manager\ArticleManager;
 
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
+session_start();
 
-// Créer un home controller qui ne fait que afficher la vue home.
+require_once './include.php';
+
+$controller = new HomeController();
+$controller->index();
+

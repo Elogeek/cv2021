@@ -1,7 +1,7 @@
 <?php
 
 use App\Entity\User;
-use App\Manager\SectionManager;
+use App\Manager\ArticleManager;
 use App\Manager\UserManager;
 
 ini_set('error_reporting', E_ALL);
@@ -10,8 +10,8 @@ ini_set('display_errors', 1);
 require_once $_SERVER['DOCUMENT_ROOT'] . '/Tests/Dumper.php';
 require_once $_SERVER['DOCUMENT_ROOT'] . '/Model/DB.php';
 require_once $_SERVER['DOCUMENT_ROOT'] . '/Model/Entity/User.php';
-require_once $_SERVER['DOCUMENT_ROOT'] . '/Model/Entity/Section.php';
-require_once $_SERVER['DOCUMENT_ROOT'] . '/Model/Manager/SectionManager.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/Model/Entity/Article.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/Model/Manager/ArticleManager.php';
 require_once $_SERVER['DOCUMENT_ROOT'] . '/Model/Manager/UserManager.php';
 
 // Return a user by id

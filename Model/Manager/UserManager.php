@@ -5,11 +5,13 @@ namespace App\Manager;
 use App\Entity\Role;
 use App\Entity\User;
 use Model\DB;
+use Model\Manager\Traits\ManagerTrait;
 use PDO;
 use PDOException;
 
 class UserManager {
 
+    use ManagerTrait;
     /**
      * Return all users.
      * @return array
