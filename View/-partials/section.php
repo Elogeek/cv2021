@@ -3,7 +3,6 @@
 
     <h3 id="education">Diplômes</h3>
     <ul class="listLi"></ul>
-    <dl id="wordDefinition"></dl>
 
     <h3 id="titleTable">Hobbies</h3>
 
@@ -29,4 +28,5 @@
             Accusantium aperiam est eum eveniet id ipsum numquam odio quas recusandae, rerum tempore ullam ut
             voluptatem voluptatibus voluptatum!
         </p>
+        <dl id="wordDefinition"></dl>
 </section>
